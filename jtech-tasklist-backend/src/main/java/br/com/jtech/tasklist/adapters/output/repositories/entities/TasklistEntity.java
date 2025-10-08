@@ -48,6 +48,7 @@ public class TasklistEntity {
     private String description;
 
     @Column(nullable = false)
+    @Builder.Default
     private boolean completed = false;
 
     @Column(nullable = false)
